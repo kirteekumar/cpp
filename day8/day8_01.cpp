@@ -24,9 +24,15 @@ class A
 
 void input(A &obj1)
 {
-	cin>>obj1.a1>>obj1.a2>>obj1.a3;
+//	cin>>obj1.a1>>obj1.a2>>obj1.a3;
 }
 
+
+class Test 
+{
+	private:
+		char &ref;
+};
 
 int main()
 {
@@ -42,8 +48,10 @@ int main()
 	class A obj1;
 	::input(obj1);
 	
-	std::cout<<obj1.a1<<obj1.a2<<obj1.a3;
-	
+	//std::cout<<obj1.a1<<obj1.a2<<obj1.a3;
+	std::cout<<sizeof(Test);
+
+
 	swap(num1,num2);
 
 	return 0;
