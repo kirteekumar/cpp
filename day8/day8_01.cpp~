@@ -55,6 +55,9 @@ int main()
 	class A obj1;
 	char ch = 'a';
 	Test t1(ch);
+	t1.disp();
+	t1.incr();
+	t1.disp();
 
 	::input(obj1);
 	
