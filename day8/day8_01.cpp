@@ -4,12 +4,40 @@
 
 using namespace std;
 
+typedef int INT;
+
+void swap (int &a, int &b)
+{
+}
+
+class A 
+{
+	public:
+		int a1;
+		int a2;
+		int a3;
+	A(void):a1(0),a2(2),a3(0)
+	{
+
+	}
+}
 
 int main()
 {
-	std::cout << "hello world";
+	int num1 = 10;	
+	int &num2 = num1;
+	
+	int *p1 = &num1;
+	int *& p2 = p1;
+	
+	int arr1[3] = {10,20,30};
+	int (&arr2)[3] = arr1;
+		
+	std::cout << *p1 << *p2;
+	
+	swap(num1,num2);
+
 	return 0;
 }
-
 
 

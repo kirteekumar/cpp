@@ -1,14 +1,29 @@
 
 #include<stdio.h>
+#include <iostream>
 
 using namespace std;
+
+typedef int INT;
+
+void swap (int &a, int &b)
+{
+}
 
 
 int main()
 {
-	std::cout << "hello world";
+	int num1 = 10;	
+	int &num2 = num1;
+	
+	int *p1 = &num1;
+	int *& p2 = p1;
+	
+	std::cout << *p1 << *p2;
+	
+	swap(num1,num2);
+
 	return 0;
 }
-
 
 
