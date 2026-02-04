@@ -20,7 +20,13 @@ class A
 	{
 
 	}
+};
+
+void input(A &obj1)
+{
+	cin>>obj1.a1>>obj1.a2>>obj1.a3;
 }
+
 
 int main()
 {
@@ -33,7 +39,10 @@ int main()
 	int arr1[3] = {10,20,30};
 	int (&arr2)[3] = arr1;
 		
-	std::cout << *p1 << *p2;
+	class A obj1;
+	::input(obj1);
+	
+	std::cout<<obj1.a1<<obj1.a2<<obj1.a3;
 	
 	swap(num1,num2);
 

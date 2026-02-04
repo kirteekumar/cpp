@@ -10,6 +10,23 @@ void swap (int &a, int &b)
 {
 }
 
+class A 
+{
+	public:
+		int a1;
+		int a2;
+		int a3;
+	A(void):a1(0),a2(2),a3(0)
+	{
+
+	}
+}
+
+void input(A &obj1)
+{
+	cin>>obj1.a1>>obj1.a2>>obj1.a3;
+}
+
 
 int main()
 {
@@ -19,7 +36,13 @@ int main()
 	int *p1 = &num1;
 	int *& p2 = p1;
 	
-	std::cout << *p1 << *p2;
+	int arr1[3] = {10,20,30};
+	int (&arr2)[3] = arr1;
+		
+	class A obj1;
+	::input(obj1);
+	
+	std::cout<<obj1.a1<<obj1.a2<<obj1.a3;
 	
 	swap(num1,num2);
 
