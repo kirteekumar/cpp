@@ -10,14 +10,13 @@ class Test
 	private:
 	int num1; //instance variable.
 	int num2; //iv
-	int num3; //iv
+	static int num3; //iv
 
 	public:
 	Test(int num1, int num2)
 	{
 		this->num1=num1;
 		this->num2=num2;
-		this->num3=500;
 	}
 
 	void printRecord(void)
@@ -28,6 +27,8 @@ class Test
 	}
 	
 };
+
+int Test::num3 = 500;
 
 int main()
 {
