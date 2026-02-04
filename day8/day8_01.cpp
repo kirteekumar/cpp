@@ -32,6 +32,13 @@ class Test
 {
 	private:
 		char &ref;
+	public:
+	Test(char &ch) : ref(ch)
+	{
+	}
+
+	void incr(){ref++;}
+	void disp(){cout<<ref<<endl;}
 };
 
 int main()
@@ -46,6 +53,12 @@ int main()
 	int (&arr2)[3] = arr1;
 		
 	class A obj1;
+	char ch = 'a';
+	Test t1(ch);
+	t1.disp();
+	t1.incr();
+	t1.disp();
+
 	::input(obj1);
 	
 	//std::cout<<obj1.a1<<obj1.a2<<obj1.a3;
