@@ -3,6 +3,28 @@ using namespace std;
 
 #define SIZE 3
 
+class Complex
+{
+
+	private:
+		int real;
+		int imag;
+	public:
+		Complex(void): real(0), imag(0)
+		{
+		}
+		Complex(int real, int imag): real(real), imag(imag)
+		{
+		}
+
+		void printRecord(void)
+		{
+			cout << "Real "<<  real << endl;
+			cout << "Imag "<<  imag << endl;
+		}
+};
+
+
 class Array
 {
 	private:
@@ -49,12 +71,11 @@ class Array
 
 int main()
 {
+	Complex c1(10,20);
+	Complex c2 = c1;
 
-	Array a1(3);
-	Array a2(3);
-	Array a3(3);
+	c2.printRecord();
 
-	a3.~Array();
 	return 0;
 }
 
