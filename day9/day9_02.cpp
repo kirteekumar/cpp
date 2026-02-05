@@ -12,7 +12,7 @@ class Array
 	public:
 		~Array()
 		{
-			cout << "distructor";
+			cout << "distructor " << this << endl ;
 			if(this->arr!=NULL)
 			{
 				delete[] this->arr; 
@@ -51,8 +51,10 @@ int main()
 {
 
 	Array a1(3);
-	a1.acceptRecord();
-	a1.printRecord();
+	Array a2(3);
+	Array a3(3);
+
+	a3.~Array();
 	return 0;
 }
 
