@@ -52,10 +52,7 @@ int main()
 {
 	Complex c1(10,20);
 	Complex c2(30,40);  //parameterized
-	Complex c3; //parameter less cnstrctr
-	cout << endl;
-	c3 = c1.sum(c2); 
-	
+	Complex c3(c2); //parameter less cnstrctr
 	cout << endl;
 	c3=c2;
 	c3.printRecord();
