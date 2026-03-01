@@ -16,7 +16,8 @@ void printRecord(int result)
 
 int main()
 {
-
+			
+	cout << "after nvim" << endl ;
 	cout << "connection open" << endl;
 	int num1;
 	int num2;
