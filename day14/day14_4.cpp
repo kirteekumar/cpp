@@ -55,10 +55,10 @@ class Derived : public Base
 
 int main()
 {
-    Base b1(10,20);
-    Base b2;
-    b2=b1;
-    b2.printRecord();
-
+    Derived d1(10,20,30);
+    Base *ptrBase = &d1;
+    ptrBase->printRecord();
+    Derived *ptrDerived = (Derived*) ptrBase;
+    ptrDerived->printRecord();
     return 0;
 }
