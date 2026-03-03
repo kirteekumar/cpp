@@ -2,6 +2,32 @@
 
 using namespace std;
 
+class Person
+{
+	private:
+		string name;
+		int age;
+	public:
+		Person(void) : name(""), age(0) {}
+		Person(string name, int age) : name(name), age(age) {}
+		void showRecord()
+		{
+			cout<<"name : "<<name<<endl;
+			cout<<"age : "<<age<<endl;
+		}
+};
+
+class Employee : public Person //base class parent class
+{
+	private:
+		int empid;
+		float salary;
+	public:
+		Employee(void) : 
+
+}
+
+
 class Date
 {
 	private:
