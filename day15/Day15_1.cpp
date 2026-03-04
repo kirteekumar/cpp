@@ -1,56 +1,66 @@
 #include<iostream> 
 using namespace std; 
 
-class Book 
+class Product
 {
-    private:
-        string title ;
+    private :
+        string title;
         float price;
-        int pageCount;
     public:
-        Book(void) : title("") , price(0.0), pageCount(0)
+        Product(void): title(""), price(0)
     {}
         void acceptRecord(void)
         {
-            cout<<"title : ";
+            cout<<"Title : ";
             cin>>title;
             cout<<"price : ";
             cin>>price;
+        }
+        void printRecord(void)
+        {
+            cout<<"title : "<<title<<endl;
+            cout<<"price : "<<price<<endl;
+        }
+};
+
+class Book : public Product
+{
+    private: 
+        int pageCount;
+    public:
+        Book(void) :pageCount(0)
+    {}
+        void acceptRecord(void)
+        {
+            Product::acceptRecord();
             cout<<"page count : ";
             cin>>pageCount;
         }
 
         void printRecord(void)
         {
-            cout<<"title : "<<title<<endl;
-            cout<<"price : "<<price<<endl;
+            Product::printRecord();
             cout<<"page count : "<<pageCount<<endl;
         }
 };
 
-class Tape
+class Tape : public Product 
 {
     private:
-        string title;
-        float price;
         int playTime;
     public:
-        Tape(void): title(""), price(0.0), playTime(0)
+        Tape(void): playTime(0)
     {}
         void acceptRecord(void)
         {
-            cout<<"title : ";
-            cin>>title;
-            cout<<"price : ";
-            cin>>price;
+            Product::acceptRecord();
             cout<<"play time : ";
             cin>>playTime;
         }
 
         void printRecord(void)
         {
-            cout<<"title : "<<title<<endl;
-            cout<<"price : "<<price<<endl;
+            Product::printRecord();
             cout<<"play time : "<<playTime<<endl;
         }
 };
@@ -59,9 +69,9 @@ class Tape
 
 int main()
 {
-    Book b1;
-    b1.acceptRecord();
-    b1.printRecord();
+    Tape t1;
+    t1.acceptRecord();
+    t1.printRecord();
 
     return 0;
 }
