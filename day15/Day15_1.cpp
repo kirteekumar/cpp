@@ -9,14 +9,14 @@ class Product
     public:
         Product(void): title(""), price(0)
     {}
-        void acceptRecord(void)
+        virtual void acceptRecord(void)
         {
             cout<<"Title : ";
             cin>>title;
             cout<<"price : ";
             cin>>price;
         }
-        void printRecord(void)
+        virtual void printRecord(void)
         {
             cout<<"title : "<<title<<endl;
             cout<<"price : "<<price<<endl;
@@ -66,12 +66,50 @@ class Tape : public Product
 };
 
 
+int menuList(void)
+{
+    int choice;
+    cout<<"---------------"<<endl;
+    cout<<"0.Exit "<<endl;
+    cout<<"1.Book "<<endl;
+    cout<<"2.Tape "<<endl;
+    cout<<"Enter choice :  "<<endl;
+    cin >>choice;
+    return choice;
+
+}
+
 
 int main()
 {
-    Tape t1;
-    t1.acceptRecord();
-    t1.printRecord();
+    int choice;
+    while((choice = ::menuList())!=0)
+    {
+        
+        Product * ptr = NULL;
+
+        switch(choice)
+        {
+        case 1:
+            ptr = new Book();
+            break;
+        case 2:
+            ptr = new Tape();
+
+            break;
+        default:
+            break;
+
+        }
+
+        if(ptr!=NULL) {
+        ptr->acceptRecord();
+        ptr->printRecord();
+        }
+
+        if (ptr!=NULL)
+            delete ptr;
+    }    
 
     return 0;
 }
