@@ -2,12 +2,26 @@
 
 using namespace std;
 
-class Rectangle
+
+class Shape
+{
+	protected:
+		float area;
+	virtual void acceptRecord() = 0;
+	
+	virtual void calculateArea() = 0;
+	
+	void printArea()
+	{
+		cout<<"Area : "<<area<<endl;
+	}
+};
+
+class Rectangle : public Shape
 {
 	private:
 		float length;
 		float breadth;
-		float area;
 
 	public:
 	void acceptRecord(void)
@@ -49,11 +63,10 @@ const float Math :: PI = 3.14;
 
 
 
-class Circle
+class Circle : public Shape 
 {
 	private:
 		float radius;
-		float area;
 	public:
 		void acceptRecord(void)
 		{
