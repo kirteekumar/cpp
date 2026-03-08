@@ -19,6 +19,14 @@ int main()
 		cout<<*ritr<<endl;
 	}while(++ritr!=l1.rend());
 
+	//traveersal using const int
+	list<int> :: const_iterator citr = l1.cbegin();
+	cout<<"List : ";
+	citr = l1.begin();
+	do {
+		cout<<*citr<<endl;
+	}while(++citr!=l1.cend());	
+
 	return 0;
 
 }
