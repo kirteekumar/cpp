@@ -3,12 +3,10 @@
 
 using namespace std;
 
-vector<int> vec;
-auto iter = vec.begin();
 
 int main()
 {
-	
+	int * ptr = nullptr;	
 	return 0;
 
 }
