@@ -7,9 +7,8 @@ using namespace std;
 
 string getData()
 {
-	string str  ;
-	cin >> str;
-	return str;
+	string *p = new std::string("New word");
+	return *p;
 }
 
 int main()
@@ -17,8 +16,13 @@ int main()
 	std::vector <std::string> coll;
 	coll.reserve(3);
 	std::string s{getData()};
+
 	coll.push_back(s);
-	coll.push_back(getData());
+
+	coll.push_back(std::move(s));
+
+	cout<<coll[0];
+	cout<<coll[1];
 
 	return 0;
 }
