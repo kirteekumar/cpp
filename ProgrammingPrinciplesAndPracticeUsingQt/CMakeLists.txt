@@ -33,7 +33,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Programming_Qt
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        Chapter01/Drill_01.cpp
+        #Chapter01/Drill_01.cpp
+        #Chapter01/Drill_02.cpp
+        #Chapter01/Drill_03.cpp
+        Chapter01/Excercise_01.cpp
+
     )
 
 # Define target properties for Android with Qt 6 as:

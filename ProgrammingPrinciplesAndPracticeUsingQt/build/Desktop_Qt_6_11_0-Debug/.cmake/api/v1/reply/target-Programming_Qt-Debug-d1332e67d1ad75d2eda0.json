@@ -74,13 +74,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 79,
+				"line" : 82,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 58,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -206,7 +206,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 72,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
@@ -228,7 +228,7 @@
 			{
 				"command" : 15,
 				"file" : 1,
-				"line" : 59,
+				"line" : 62,
 				"parent" : 0
 			}
 		]
@@ -335,8 +335,7 @@
 				10,
 				12,
 				13,
-				14,
-				15
+				14
 			]
 		}
 	],
@@ -427,8 +426,7 @@
 				10,
 				12,
 				13,
-				14,
-				15
+				14
 			]
 		},
 		{
@@ -449,14 +447,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				16
+				15
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				17
+				16
 			]
 		}
 	],
@@ -542,13 +540,7 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "Chapter01/Drill_01.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "Chapter01/Excercise_01.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
