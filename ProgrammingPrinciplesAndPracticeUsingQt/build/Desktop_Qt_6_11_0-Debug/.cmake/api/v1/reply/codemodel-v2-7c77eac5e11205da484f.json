@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-8704e9e11fefcdd066b9.json",
+					"jsonFile" : "directory-.-Debug-3669b50d4ef7bcf99071.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Programming_Qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Programming_Qt-Debug-bc9125195806837857df.json",
+					"jsonFile" : "target-Programming_Qt-Debug-9dfb24d7c5652524cbb9.json",
 					"name" : "Programming_Qt",
 					"projectIndex" : 0
 				},

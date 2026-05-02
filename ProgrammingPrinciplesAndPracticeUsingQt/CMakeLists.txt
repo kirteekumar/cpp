@@ -39,7 +39,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         #Chapter01/Excercise_01.cpp
         #Chapter01/Excercise_02.cpp
         #Chapter01/Excercise_03.cpp
-        Chapter01/Excercise_04.cpp
+        #Chapter01/Excercise_04.cpp
+        Chapter01/Excercise_05.cpp
 
     )
 
