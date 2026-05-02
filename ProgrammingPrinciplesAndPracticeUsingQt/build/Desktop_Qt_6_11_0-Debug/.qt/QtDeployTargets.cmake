@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_Programming_Qt_FILE /home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt)
+set(__QT_DEPLOY_TARGET_Programming_Qt_FILE /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt)
 set(__QT_DEPLOY_TARGET_Programming_Qt_TYPE EXECUTABLE)

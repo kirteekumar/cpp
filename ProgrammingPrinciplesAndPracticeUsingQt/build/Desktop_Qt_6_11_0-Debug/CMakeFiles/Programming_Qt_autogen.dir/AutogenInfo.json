@@ -1,18 +1,18 @@
 {
-	"BUILD_DIR" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen",
-	"CMAKE_BINARY_DIR" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt",
+	"BUILD_DIR" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen",
+	"CMAKE_BINARY_DIR" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt",
 	"CMAKE_EXECUTABLE" : "/home/kirteekumar/Qt/Tools/CMake/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/CMakeLists.txt",
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/.qtcreator/cmake-helper/package-manager.cmake",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/CMakeLists.txt",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/.qtcreator/cmake-helper/package-manager.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeSystem.cmake.in",
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake",
@@ -65,7 +65,7 @@
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -91,7 +91,7 @@
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -579,64 +579,64 @@
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt",
+	"CMAKE_SOURCE_DIR" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/deps",
+	"DEP_FILE" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Programming_Qt_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/GUI.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/GUI.h",
 			"MU",
 			"RHQ2GUKVYE/moc_GUI.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/GUI_private.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/GUI_private.h",
 			"MU",
 			"RHQ2GUKVYE/moc_GUI_private.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Graph.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Graph.h",
 			"MU",
 			"RHQ2GUKVYE/moc_Graph.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Image_private.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Image_private.h",
 			"MU",
 			"RHQ2GUKVYE/moc_Image_private.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Point.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Point.h",
 			"MU",
 			"RHQ2GUKVYE/moc_Point.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Simple_window.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Simple_window.h",
 			"MU",
 			"RHQ2GUKVYE/moc_Simple_window.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Window.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Window.h",
 			"MU",
 			"RHQ2GUKVYE/moc_Window.cpp",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/std_lib_facilities.h",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/std_lib_facilities.h",
 			"MU",
 			"RHQ2GUKVYE/moc_std_lib_facilities.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_QML_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -647,7 +647,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt",
+		"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/include/QtCore",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/include",
 		"/home/kirteekumar/Qt/6.11.0/gcc_64/mkspecs/linux-g++",
@@ -681,46 +681,46 @@
 		"-c",
 		"/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/home/kirteekumar/Qt/6.11.0/gcc_64/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/home/kirteekumar/Qt/6.11.0/gcc_64/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
-	"SETTINGS_FILE" : "/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/Colormap.cpp",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Colormap.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/GUI.cpp",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/GUI.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/Graph.cpp",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Graph.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/Simple_window.cpp",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Simple_window.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/Window.cpp",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Window.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/main.cpp",
+			"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/main.cpp",
 			"MU",
 			null
 		]

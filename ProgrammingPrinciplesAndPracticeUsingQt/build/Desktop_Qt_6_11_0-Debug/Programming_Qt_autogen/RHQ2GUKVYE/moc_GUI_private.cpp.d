@@ -1,8 +1,5 @@
-/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/RHQ2GUKVYE/moc_GUI_private.cpp: /home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/GUI_private.h \
-  /home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/moc_predefs.h \
-  /home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Graph.h \
-  /home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Point.h \
-  /home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/PPP/std_lib_facilities.h \
+/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/RHQ2GUKVYE/moc_GUI_private.cpp: /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/GUI_private.h \
+  /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/moc_predefs.h \
   /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtCore/QEventLoop \
   /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtCore/QTimer \
   /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtCore/q17memory.h \
@@ -169,6 +166,9 @@
   /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtWidgets/qwidget.h \
+  /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Graph.h \
+  /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/Point.h \
+  /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/PPP/std_lib_facilities.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -1,13 +1,13 @@
 # ninja log v5
-2	189	1777715703437351971	Programming_Qt_autogen/timestamp	35063a390b096145
-2	189	1777715703437351971	Programming_Qt_autogen/mocs_compilation.cpp	35063a390b096145
-2	189	1777715703437351971	/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/timestamp	35063a390b096145
-2	189	1777715703437351971	/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/mocs_compilation.cpp	35063a390b096145
-190	806	1777715704057338485	CMakeFiles/Programming_Qt.dir/main.cpp.o	e3d0faca923756d
-190	1005	1777715704256334160	CMakeFiles/Programming_Qt.dir/Colormap.cpp.o	e6665e5fa52d44bc
-190	1350	1777715704601326662	CMakeFiles/Programming_Qt.dir/Graph.cpp.o	25328af09841e9dd
-189	1844	1777715705094315950	CMakeFiles/Programming_Qt.dir/Programming_Qt_autogen/mocs_compilation.cpp.o	3c7de15f88a1198e
-190	1851	1777715705102315777	CMakeFiles/Programming_Qt.dir/Simple_window.cpp.o	6406433db2864e35
-190	2206	1777715705456308092	CMakeFiles/Programming_Qt.dir/GUI.cpp.o	dc047422087141fa
-190	2412	1777715705660303663	CMakeFiles/Programming_Qt.dir/Window.cpp.o	9da423736ead5472
-2412	2602	1777715705850299538	Programming_Qt	ca0d1d7ef7d89aa7
+1	191	1777717922918122368	Programming_Qt_autogen/timestamp	88c7f260feeeb093
+1	191	1777717922918122368	Programming_Qt_autogen/mocs_compilation.cpp	88c7f260feeeb093
+1	191	1777717922918122368	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/timestamp	88c7f260feeeb093
+1	191	1777717922918122368	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/mocs_compilation.cpp	88c7f260feeeb093
+192	861	1777717923591114242	CMakeFiles/Programming_Qt.dir/main.cpp.o	b8e93e8e850190ef
+192	1117	1777717923847111151	CMakeFiles/Programming_Qt.dir/Colormap.cpp.o	125a5410dd73f7ff
+192	1478	1777717924207106804	CMakeFiles/Programming_Qt.dir/Graph.cpp.o	22d29a77bf8118a
+192	2047	1777717924777099923	CMakeFiles/Programming_Qt.dir/Programming_Qt_autogen/mocs_compilation.cpp.o	f3c22e10b51b0b82
+192	2063	1777717924793099730	CMakeFiles/Programming_Qt.dir/Simple_window.cpp.o	535a56633e6cb5b7
+192	2474	1777717925203094780	CMakeFiles/Programming_Qt.dir/GUI.cpp.o	fbaf1d4a4384baf5
+192	2730	1777717925459296185	CMakeFiles/Programming_Qt.dir/Window.cpp.o	1af9f4c3ea15cc80
+2731	2981	1777717925708620745	Programming_Qt	ca0d1d7ef7d89aa7
