@@ -40,7 +40,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         #Chapter10/Excercise_02.cpp
         #Chapter10/Excercise_03.cpp
         #Chapter10/Excercise_04.cpp
-        Chapter10/Excercise_05.cpp
+        #Chapter10/Excercise_05.cpp
+        #Chapter10/Excercise_06.cpp
+        #Chapter10/Excercise_07.cpp
+        #Chapter10/Excercise_08.cpp
+        #Chapter10/Excercise_09.cpp
+        Chapter10/Excercise_10.cpp
 
     )
 

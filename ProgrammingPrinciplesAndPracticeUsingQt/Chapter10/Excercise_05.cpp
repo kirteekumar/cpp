@@ -20,8 +20,8 @@ int main()
     //3/4 = height
 
 
-    int w = win.x_max() * 2 / 3 ; //2/3 = width
-    int h = win.y_max() * 3 / 4 ; //3/4 = height
+    int w = x_max() * 2 / 3 ; //2/3 = width
+    int h = y_max() * 3 / 4 ; //3/4 = height
 
     Rectangle rec1 = {{0,0}, w,h};
 

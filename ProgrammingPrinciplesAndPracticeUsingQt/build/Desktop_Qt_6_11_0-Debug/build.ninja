@@ -97,9 +97,9 @@ build CMakeFiles/Programming_Qt.dir/Colormap.cpp.o: CXX_COMPILER__Programming_Qt
   OBJECT_DIR = CMakeFiles/Programming_Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/Programming_Qt.dir
 
-build CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_05.cpp.o: CXX_COMPILER__Programming_Qt_unscanned_Debug /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter10/Excercise_05.cpp || cmake_object_order_depends_target_Programming_Qt
+build CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_10.cpp.o: CXX_COMPILER__Programming_Qt_unscanned_Debug /home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter10/Excercise_10.cpp || cmake_object_order_depends_target_Programming_Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_QML_DEBUG -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_05.cpp.o.d
+  DEP_FILE = CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_10.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Werror -fPIC
   INCLUDES = -I/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/include -I/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/. -isystem /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtCore -isystem /home/kirteekumar/Qt/6.11.0/gcc_64/include -isystem /home/kirteekumar/Qt/6.11.0/gcc_64/mkspecs/linux-g++ -isystem /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtWidgets -isystem /home/kirteekumar/Qt/6.11.0/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/Programming_Qt.dir
@@ -113,7 +113,7 @@ build CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_05.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable Programming_Qt
 
-build Programming_Qt: CXX_EXECUTABLE_LINKER__Programming_Qt_Debug CMakeFiles/Programming_Qt.dir/Programming_Qt_autogen/mocs_compilation.cpp.o CMakeFiles/Programming_Qt.dir/Window.cpp.o CMakeFiles/Programming_Qt.dir/Graph.cpp.o CMakeFiles/Programming_Qt.dir/GUI.cpp.o CMakeFiles/Programming_Qt.dir/Simple_window.cpp.o CMakeFiles/Programming_Qt.dir/Colormap.cpp.o CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_05.cpp.o | /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Widgets.so.6.11.0 /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Gui.so.6.11.0 /usr/lib/x86_64-linux-gnu/libGL.so /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Core.so.6.11.0 || Programming_Qt_autogen Programming_Qt_autogen_timestamp_deps
+build Programming_Qt: CXX_EXECUTABLE_LINKER__Programming_Qt_Debug CMakeFiles/Programming_Qt.dir/Programming_Qt_autogen/mocs_compilation.cpp.o CMakeFiles/Programming_Qt.dir/Window.cpp.o CMakeFiles/Programming_Qt.dir/Graph.cpp.o CMakeFiles/Programming_Qt.dir/GUI.cpp.o CMakeFiles/Programming_Qt.dir/Simple_window.cpp.o CMakeFiles/Programming_Qt.dir/Colormap.cpp.o CMakeFiles/Programming_Qt.dir/Chapter10/Excercise_10.cpp.o | /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Widgets.so.6.11.0 /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Gui.so.6.11.0 /usr/lib/x86_64-linux-gnu/libGL.so /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Core.so.6.11.0 || Programming_Qt_autogen Programming_Qt_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/kirteekumar/Qt/6.11.0/gcc_64/lib:  /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Widgets.so.6.11.0  /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Gui.so.6.11.0  /usr/lib/x86_64-linux-gnu/libGL.so  /home/kirteekumar/Qt/6.11.0/gcc_64/lib/libQt6Core.so.6.11.0  -Wl,-rpath-link,/home/kirteekumar/Qt/6.11.0/gcc_64/lib
   OBJECT_DIR = CMakeFiles/Programming_Qt.dir
