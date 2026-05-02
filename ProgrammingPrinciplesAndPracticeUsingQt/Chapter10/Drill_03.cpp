@@ -82,7 +82,7 @@ int main()
     t.set_font_size(20);
     win.set_label("Bold text");
 
-    Image copter {Point{100,50},"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter01/mars_copter.jpg"};
+    Image copter {Point{100,50},"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter10/mars_copter.jpg"};
     win.attach(copter);
     win.set_label("Mars copter");
 
@@ -99,7 +99,7 @@ int main()
     oss << "screen size: " << x_max() << "∗" << y_max()
         << "; window size: " << win.x_max() << "∗" << win.y_max();
     Text sizes {Point{100,20},oss.str()};
-    Image scan{ Point{275,225},"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter01/scandinavia.jpg" };
+    Image scan{ Point{275,225},"/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter10/scandinavia.jpg" };
     scan.scale(150,200);
     win.attach(c);
     win.attach(m);

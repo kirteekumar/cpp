@@ -15,36 +15,32 @@ int main()
 {
     Application app;
 
-    Simple_window win = {{0,0},1500,500,"my window"};
+    Simple_window win = {{0,0},1500,1500,"my window"};
 
-    Rectangle rec1 = {{0,0}, 100,100};
-    rec1.set_fill_color(Color::white);
-    Rectangle rec2 = {{100,0}, 100,100};
-    rec2.set_fill_color(Color::red);
-    Rectangle rec3 = {{200,0}, 100,100};
-    rec3.set_fill_color(Color::white);
-    Rectangle rec4 = {{0,100}, 100,100};
-    rec4.set_fill_color(Color::red);
-    Rectangle rec5 = {{100,100}, 100,100};
-    rec5.set_fill_color(Color::white);
-    Rectangle rec6 = {{200,100}, 100,100};
-    rec6.set_fill_color(Color::red);
-    Rectangle rec7 = {{0,200}, 100,100};
-    rec7.set_fill_color(Color::white);
-    Rectangle rec8 = {{100,200}, 100,100};
-    rec8.set_fill_color(Color::red);
-    Rectangle rec9 = {{200,200}, 100,100};
-    rec9.set_fill_color(Color::white);
+    //3/4 = height
+
+
+    int w = win.x_max() * 2 / 3 ; //2/3 = width
+    int h = win.y_max() * 3 / 4 ; //3/4 = height
+
+    Rectangle rec1 = {{0,0}, w,h};
+
+    //Do conversion from 1/4 inch to pixel.
+    //For simplicity, I will consider 1/4 inch of frame as a 25 pixels.
+
+    //First I will move rectangle randomly somewhere inside so that frame would be visible.
+    rec1.move(100,100);
+
+    //100-25 = 75 (clearing 25 pixels of margin for the first point)
+    Closed_polyline pl = {{75,75}};
+
+    pl.add({100 + w + 25        , 75            }); //right side point
+    pl.add({100 + w + 25        , 100 + h + 25  }); //come down
+    pl.add({75                  , 100 + h + 25  }); //left side point
 
     win.attach(rec1);
-    win.attach(rec2);
-    win.attach(rec3);
-    win.attach(rec4);
-    win.attach(rec5);
-    win.attach(rec6);
-    win.attach(rec7);
-    win.attach(rec8);
-    win.attach(rec9);
+    win.attach(pl);
+
     win.wait_for_button();
 
 	return 0;
