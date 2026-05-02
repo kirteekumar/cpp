@@ -33,7 +33,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Programming_Qt
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        #Chapter10/Drill_01.cpp
+        Chapter10/Drill_01.cpp
         #Chapter10/Drill_02.cpp
         #Chapter10/Drill_03.cpp
         #Chapter10/Excercise_01.cpp
@@ -45,7 +45,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         #Chapter10/Excercise_07.cpp
         #Chapter10/Excercise_08.cpp
         #Chapter10/Excercise_09.cpp
-        Chapter10/Excercise_10.cpp
+        #Chapter10/Excercise_10.cpp
+        #Chapter10/Excercise_11.cpp
+        #Chapter10/Excercise_12.cpp
+        #Chapter10/Excercise_13.cpp
 
     )
 

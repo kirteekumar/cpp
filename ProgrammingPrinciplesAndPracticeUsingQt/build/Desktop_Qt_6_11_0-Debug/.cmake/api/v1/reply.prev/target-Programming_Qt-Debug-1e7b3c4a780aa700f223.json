@@ -74,13 +74,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 91,
+				"line" : 94,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 70,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
@@ -206,7 +206,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 84,
+				"line" : 87,
 				"parent" : 0
 			},
 			{
@@ -228,7 +228,7 @@
 			{
 				"command" : 15,
 				"file" : 1,
-				"line" : 71,
+				"line" : 74,
 				"parent" : 0
 			}
 		]
@@ -334,8 +334,7 @@
 				8,
 				10,
 				12,
-				13,
-				14
+				13
 			]
 		}
 	],
@@ -425,8 +424,7 @@
 				8,
 				10,
 				12,
-				13,
-				14
+				13
 			]
 		},
 		{
@@ -447,14 +445,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				15
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				16
+				15
 			]
 		}
 	],
@@ -535,12 +533,6 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "Colormap.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "Chapter10/Excercise_10.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

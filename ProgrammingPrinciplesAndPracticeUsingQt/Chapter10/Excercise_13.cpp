@@ -2,8 +2,9 @@
 Author: Kirteekumar
 Date:02.05.2026
 
-Excercise10:
-Draw the source ﬁle diagram from §10.8.1.
+Excercise13:
+Find a way to add color to the lines from the previous exercise. Make some lines one
+color and other lines another color or other colors.
 */
 
 #include "string"
@@ -18,7 +19,7 @@ int main()
     Simple_window win = {{0,0},500,500,"my window"};
     //Point bp = {200,200}; //begining point
 
-    //TODO: Basically just a few rectangles, labels and few arrows.
+    //TODO:
 
     //win.attach(txt);
 
