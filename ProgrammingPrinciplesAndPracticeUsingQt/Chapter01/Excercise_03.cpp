@@ -2,7 +2,7 @@
 Author: Kirteekumar
 Date:02.05.2026
 
-Excercise02:
+Excercise03:
 Draw your initials 150 pixels high. Use a thick line. Draw each initial in a different
 color.*/
 
