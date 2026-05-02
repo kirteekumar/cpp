@@ -1,0 +1,9 @@
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/edit_cache.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/rebuild_cache.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/list_install_components.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/install.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/install/local.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/install/strip.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt_autogen_timestamp_deps.dir
+/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/CMakeFiles/Programming_Qt_autogen.dir

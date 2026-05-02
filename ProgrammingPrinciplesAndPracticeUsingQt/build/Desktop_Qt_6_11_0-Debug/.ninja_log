@@ -1,0 +1,13 @@
+# ninja log v5
+2	189	1777715703437351971	Programming_Qt_autogen/timestamp	35063a390b096145
+2	189	1777715703437351971	Programming_Qt_autogen/mocs_compilation.cpp	35063a390b096145
+2	189	1777715703437351971	/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/timestamp	35063a390b096145
+2	189	1777715703437351971	/home/kirteekumar/ProgrammingPrinciplesAndPracticeUsingQt/build/Desktop_Qt_6_11_0-Debug/Programming_Qt_autogen/mocs_compilation.cpp	35063a390b096145
+190	806	1777715704057338485	CMakeFiles/Programming_Qt.dir/main.cpp.o	e3d0faca923756d
+190	1005	1777715704256334160	CMakeFiles/Programming_Qt.dir/Colormap.cpp.o	e6665e5fa52d44bc
+190	1350	1777715704601326662	CMakeFiles/Programming_Qt.dir/Graph.cpp.o	25328af09841e9dd
+189	1844	1777715705094315950	CMakeFiles/Programming_Qt.dir/Programming_Qt_autogen/mocs_compilation.cpp.o	3c7de15f88a1198e
+190	1851	1777715705102315777	CMakeFiles/Programming_Qt.dir/Simple_window.cpp.o	6406433db2864e35
+190	2206	1777715705456308092	CMakeFiles/Programming_Qt.dir/GUI.cpp.o	dc047422087141fa
+190	2412	1777715705660303663	CMakeFiles/Programming_Qt.dir/Window.cpp.o	9da423736ead5472
+2412	2602	1777715705850299538	Programming_Qt	ca0d1d7ef7d89aa7
