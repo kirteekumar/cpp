@@ -2,9 +2,8 @@
 Author: Kirteekumar
 Date:03.05.2026
 
-Chapter11: Drill02:
-Put an 8-by-8 grid on the leftmost 800-by-800 part of that window (so that each square is 100 by 100).
-*/
+Chapter11: Drill03:
+Make the eight squares on the diagonal starting from the top left corner red (use Rectangle).*/
 
 #include "PPP/Simple_window.h"
 
