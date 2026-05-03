@@ -2,7 +2,7 @@
 Author: Kirteekumar
 Date:03.05.2026
 
-Chapter11: Drill02:
+Chapter11: Drill03:
 Make the eight squares on the diagonal starting from the top left corner red (use Rectangle).
 */
 
