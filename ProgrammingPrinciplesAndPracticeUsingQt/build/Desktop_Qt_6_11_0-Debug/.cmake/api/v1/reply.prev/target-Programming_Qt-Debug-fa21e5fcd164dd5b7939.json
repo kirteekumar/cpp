@@ -74,13 +74,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 94,
+				"line" : 95,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 73,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
@@ -206,7 +206,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 87,
+				"line" : 88,
 				"parent" : 0
 			},
 			{
@@ -228,7 +228,7 @@
 			{
 				"command" : 15,
 				"file" : 1,
-				"line" : 74,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -334,7 +334,9 @@
 				8,
 				10,
 				12,
-				13
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -424,7 +426,9 @@
 				8,
 				10,
 				12,
-				13
+				13,
+				14,
+				15
 			]
 		},
 		{
@@ -445,14 +449,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				14
+				16
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				15
+				17
 			]
 		}
 	],
@@ -533,6 +537,18 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "Colormap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Chapter11/Drill_01.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Chapter11/Drill_02.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
