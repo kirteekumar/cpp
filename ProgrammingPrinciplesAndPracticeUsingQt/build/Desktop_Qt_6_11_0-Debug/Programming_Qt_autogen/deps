@@ -527,7 +527,7 @@ Programming_Qt_autogen/timestamp: \
 	/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/Linux.cmake \
 	/home/kirteekumar/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/UnixPaths.cmake \
 	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/CMakeLists.txt \
-	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter11/Excercise_01.cpp \
+	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Chapter12/Drill_01.cpp \
 	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Colormap.cpp \
 	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/GUI.cpp \
 	/home/kirteekumar/cpp/ProgrammingPrinciplesAndPracticeUsingQt/Graph.cpp \
