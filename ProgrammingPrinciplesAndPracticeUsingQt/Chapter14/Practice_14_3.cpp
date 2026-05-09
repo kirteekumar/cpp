@@ -40,26 +40,23 @@ public:
 
     void put_on_top(Shape& s);	// put p on top of other shapes
 
-    WindowPrivate& get_impl() const;
     void draw();
     void close();
-    void wait_for_button(Button* button);
     void end_button_wait();
     void timer_wait(int milliseconds);
     void timer_wait(int milliseconds, std::function<void()> cb);
 private:
     Point p;
     int w,h;					// window size
-    unique_ptr<WindowPrivate> impl;
     void init();
-};
+    };
 
 int gui_main();	// invoke GUI library's main event loop
 
 inline int x_max() { return 1024; }	// width of screen in pixels
 inline int y_max() { return 768; }	// height of screen in pixels
 
-}
+
 
 struct Simple_window : Window {
 
