@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -9,6 +10,9 @@ int main()
     while(true)
     {
         cin>>n;
+        
+         cout << "Out of Cin!!!" << endl;
+         
         if(cin)
         {
             if(1<=n && n<=10)
@@ -21,13 +25,14 @@ int main()
             cout << "cin is failed!!!" << endl;
             cout << "Here are the values : " << endl;
             
-            for(char ch;cin >>ch;)
+            for(int ch;cin >>ch;)
             {
                 cout << "cin values : " << ch <<  endl;
             }
         }
         
-        cout << "Going int while again " <<  endl;
+        cout << "Going in while again " <<  endl;
+        
     }
     return 0;
 }
