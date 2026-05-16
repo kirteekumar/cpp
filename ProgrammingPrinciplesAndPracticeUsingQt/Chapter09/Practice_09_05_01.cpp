@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    std::cout<<"Hello World";
     int n; 
     
     while(true)
@@ -14,9 +13,21 @@ int main()
         {
             if(1<=n && n<=10)
                 return n;
-            cout << "Sorry " << n << "is not in the range" << endl;
+            cout << "Sorry " << n << " is not in the range" << endl;
         }
+        if(cin.fail())
+        {
+            cin.clear();
+            cout << "cin is failed!!!" << endl;
+            cout << "Here are the values : " << endl;
+            
+            for(char ch;cin >>ch;)
+            {
+                cout << "cin values : " << ch <<  endl;
+            }
+        }
+        
+        cout << "Going int while again " <<  endl;
     }
-
     return 0;
 }
