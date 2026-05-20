@@ -19,12 +19,20 @@ class Vector {
 		    copy(lst.begin(),lst.end(),elem);
 		}
 		
+		Vector (const Vector&); //Copy constructor
+		
+		
 		~Vector() {delete[] elem;}
 		
 		double& operator [](int n) {return elem[n];}
 		const double& operator [](int n) const {return elem[n];}
 		
 };
+
+Vector::Vector (const Vector& arg): sz{arg.sz},elem{new double[arg.sz]}
+{
+    copy(arg.elem,arg.elem+sz,elem);
+}
 
 int main()
 {
