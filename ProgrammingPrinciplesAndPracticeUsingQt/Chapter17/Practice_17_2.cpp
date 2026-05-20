@@ -9,15 +9,15 @@ class Vector {
 		
 		public:
 		double& operator [](int n) {return elem[n];}
+		const double& operator [](int n) const {return elem[n];}
 		Vector(int n) {sz = n; elem = new double[n];}
 };
 
 int main()
 {
     Vector v(9);
-    double x = v[0];
+    const double x = v[0];
     v[1] = 5.0;
-    x = v[1];
     cout << "x : " << x << endl ;
 	return 0;
 }
