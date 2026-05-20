@@ -20,6 +20,7 @@ class Vector {
 		}
 		
 		Vector (const Vector&); //Copy constructor
+		Vector& operator=(const Vector&); //Copy assignment
 		
 		
 		~Vector() {delete[] elem;}
@@ -32,6 +33,13 @@ class Vector {
 Vector::Vector (const Vector& arg): sz{arg.sz},elem{new double[arg.sz]}
 {
     copy(arg.elem,arg.elem+sz,elem);
+}
+Vector& Vector :: operator= (const Vector& arg)
+{
+    sz = arg.sz; 
+    elem = new double[arg.sz];
+    copy(arg.elem,arg.elem+sz,elem);
+    return *this;
 }
 
 int main()
