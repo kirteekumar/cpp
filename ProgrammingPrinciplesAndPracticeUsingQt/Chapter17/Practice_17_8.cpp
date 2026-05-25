@@ -60,20 +60,22 @@ ostream& operator << (ostream& os, Vector& v)
 
 
 void grow(Vector& v)    // read elements into a vector without using push_back:
+{
+	int n = v.size();  // number of elements
+	double d=0;
+	for (; cin>>d; ) 
 	{
-		int n = 5;  // number of elements
-		double d=0;
-		for (; cin>>d; ) 
+		if (n==v.size()) 
 		{
-			if (n==v.size()) 
+			Vector v2(v.size()+1);		
+			for (int i=0; i<v.size(); ++i)
 			{
-				Vector v2(v.size()+1);		
-				for (int i; i<v.size(); ++i)
-				    v2[i] = v[i];
-				
-				v = v2;
-		}
-	}
+			    v2[i] = v[i];
+			}
+			v = v2;
+	    }
+	    break;
+    }
 	v[n] = d;
 	// add the new element
 }
@@ -84,6 +86,7 @@ int main()
 {
 	Vector v(5);
 
+	grow(v);
 	grow(v);
 	
 	cout<<v;
