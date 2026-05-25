@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 class Vector {
 		int sz;
 		double *elem;
@@ -19,8 +18,8 @@ class Vector {
 		    copy(lst.begin(),lst.end(),elem);
 		}
 		
-		Vector (const Vector&); //Copy constructor
-		Vector& operator=(const Vector&); //Copy assignment
+		Vector (const Vector&);             //Copy constructor
+		Vector& operator=(const Vector&);   //Copy assignment
 		
 		
 		~Vector() {delete[] elem;}
@@ -28,14 +27,11 @@ class Vector {
 		double& operator [](int n) {return elem[n];}
 		const double& operator [](int n) const {return elem[n];}
 		
-		int size(void);
+		ostream& operator <<(ostream&);
 		
-};
+		int size(void) { return sz;}
 
-int Vector::size()
-{
-    return sz;
-}
+};
 
 Vector::Vector (const Vector& arg): sz{arg.sz},elem{new double[arg.sz]}
 {
@@ -49,31 +45,52 @@ Vector& Vector :: operator= (const Vector& arg)
     return *this;
 }
 
+
+
+ostream& operator << (ostream& os, Vector& v) 
+{
+    
+    for(int i=0; i<v.size(); i++)
+    {
+        os<<v[i];
+    }
+    
+    return os;
+}
+
+
 void grow(Vector& v)
 {
-	int n=0;
-	for(double d;cin >>d;)
-	{
-	    cout<<"d : "<<d;
-	    cout<<"cout<<d : "<< v.size();
-		if(n==v.size())
-		{
-		    
-			Vector v2(v.size()+1);
-			for(int i; i<v.size();++i)
-				v2[i] = v[i];
-			v=v2;
-		}
-		n++;
-	}
-	//v[n]=d;
+    int n = 0;
+    
+    //number of elements
+    for (double d; cin>>d; ) 
+    {
+        //if (n==v.size()) 
+        //{
+            Vector v2(v.size()+1);
+            
+            for (; n<v.size(); ++n)
+                v2[n] = v[n];
+                
+            v = v2;
+        //}
+        
+        // add the new element
+        v[n] = d;
+        break;
+    }
 }
+
+
 
 int main()
 {
 	Vector v(5);
-	
+
 	grow(v);
+	
+	cout<<v;
 	
  	return 0;
 }
