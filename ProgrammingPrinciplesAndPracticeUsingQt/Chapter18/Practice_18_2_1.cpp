@@ -1,5 +1,5 @@
 #include "iostream"
-
+#include <memory>
 //using namespace std;
 
 template<typename T>
@@ -8,6 +8,24 @@ class Allocator {
     T* allocate(int n);
     void deallocate(T* p, int n);
 };
+
+template<typename T>
+void Allocator<T>::deallocate(T* p, int n)
+{
+    delete[] p;    
+}
+
+template<typename T>
+void destroy(T* elem, int sz)
+{
+    delete[] elem;    
+}
+
+template<typename T>
+T* Allocator<T>::allocate(int n)
+{
+    return new T[n];
+}
 
 template<typename T, typename A = Allocator<T>>
 //template<typename T>
@@ -73,17 +91,25 @@ class Vector {
 };
 
 template<typename T, typename A>
-void Vector <T,A>::resize(int newsize, T t)
+void Vector <T,A>::resize(int newalloc, T t)
 //template<typename T>
 //void Vector <T>::resize(int newsize, T t)
 {
+    if(newalloc<=space)
+        return;
     
-    
+    T* p = alloc.allocate(newalloc);
+    std::uninitialized_move(elem,&elem[sz],p);
+    destroy(elem,space);
+    alloc.deallocate(elem,capacity());
+    elem = p;
+    space = newalloc;
 }
 
 int main()
 {
     Vector<double>  v;
+    v.resize(1);
 	
 	return 0;
 }
