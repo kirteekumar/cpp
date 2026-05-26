@@ -65,7 +65,7 @@ class Vector {
 	T* end() const { return elem+sz; }
 };
 
-template<typename T, typename A = allocator<T>>
+template<typename T, typename A>
 void Vector <T,A>::resize(int newsize, T t)
 //template<typename T>
 //void Vector <T>::resize(int newsize, T t)
