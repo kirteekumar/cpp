@@ -2,11 +2,11 @@
 
 using namespace std;
 
-//template<typename T, typename A = allocator<T>>
-template<typename T>
+template<typename T, typename A = allocator<T>>
+//template<typename T>
 
 class Vector {
-	//A alloc;
+	A alloc;
 	
 	int sz;
 	// the size
@@ -65,11 +65,10 @@ class Vector {
 	T* end() const { return elem+sz; }
 };
 
-//template<typename T, typename A = allocator<T>>
-//void Vector <T,A>::resize(int newsize, T t)
-
-template<typename T>
-void Vector <T>::resize(int newsize, T t)
+template<typename T, typename A = allocator<T>>
+void Vector <T,A>::resize(int newsize, T t)
+//template<typename T>
+//void Vector <T>::resize(int newsize, T t)
 {
     
     
