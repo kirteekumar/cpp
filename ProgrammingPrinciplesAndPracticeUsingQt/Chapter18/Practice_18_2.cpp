@@ -19,7 +19,7 @@ class Vector {
 	{
 	    cout<<"explicit with argument : "<<s<<" "<<endl;
 		for (int i=0; i<sz; ++i)
-		    elem[i]=0;
+		    elem[i] = 0;
 		// elements are initialized
 	}
 	
@@ -82,12 +82,12 @@ class No_default
 
 int main()
 {
-    Vector<double>  v;
+    //Vector<double>  v;
     Vector<double>  v1(5);
-    Vector<char>    v2;
+    //Vector<char>    v2;
 	
-	Vector<No_default> nd1;
-	Vector<No_default> nd2(1);
+	//Vector<No_default> nd1;
+	//Vector<No_default> nd2(1);
 	
 	return 0;
 }
