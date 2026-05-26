@@ -2,61 +2,60 @@
 
 using namespace std;
 
-
-#include "iostream"
-
-using namespace std;
-
-//template<Element T>
-template <typename T, int sz>
-	requires copyable<T>()
-	
-class Buffer 
-{
+template<typename T>// for all types T (just like in math)
+class Vector {
+	int sz;
+	// the size
+	T* elem;
+	// a pointer to the elements
+	int space;
+	// size + free space
 	public:
-		using value_type = T;
-		const int size() {return sz;}
-	private:
-		T elem[sz];
+	Vector() :sz{0}, elem{nullptr}, space{0} { }
+	explicit Vector(int s) :sz{s}, elem{new T[s]}, space{s}
+	{
+		for (int i=0; i<sz; ++i)
+		elem[i]=0;
+		// elements are initialized
+	}
+	Vector(initializer_list<T>);
+	// list constructor
+	Vector& operator=(initializer_list<T>);
+	// list assignment
+	Vector(const Vector&);
+	// copy constr uctor
+	Vector& operator=(const Vector&);
+	// copy assignment
+	Vector(Vector&& );
+	// move constr uctor
+	Vector& operator=(Vector&&);
+	// move assignment
+	~Vector() { delete[] elem; }
+	// destr uctor
+	T& operator[](int n) 
+	{ 
+		return elem[n]; 
+	}
+	
+	// access: return reference
+	const T& operator[](int n) const { return elem[n]; }
+	
+	int size() const { return sz; }
+	// the current size
+	int capacity() const { return space; }
+	// the current capacity
+	void resize(int newsize);
+	// growth
+	void push_back(const T& d);
+	void reserve(int newalloc);
+	T* begin() const { return elem; }
+	// iteration support
+	T* end() const { return elem+sz; }
 };
 
-Buffer <int, 10> bufG;
-
-int main()
-{
-	Buffer <char, 12> BufL;
-	
-	return 0;
-}
-
-/* 
-//template<Element T>
-template <typename T>
-	requires copyable<T>()
-
-void Vector<T>::resize(int newsize, T def=T{})
-
-//Use T{} as default value unless we say otherwise
-
-Vector <double> v1;
-
-v1.resize(100);
-v1.resize(200,0.0);
-v1.resize(300,1.0);
-
-class No_default{
-	No_default(int);
-}
-
-Vector <No_default> v2(10);
-Vector <No_default> v3;
-
-v3.resize(100,No_default{2});
-v3.resize(200);
-
 
 int main()
 {
 	
 	return 0;
-} */
+}
