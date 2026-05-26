@@ -2,7 +2,38 @@
 
 using namespace std;
 
-template<Element T>
+
+#include "iostream"
+
+using namespace std;
+
+//template<Element T>
+template <typename T, int sz>
+	requires copyable<T>()
+	
+class Buffer 
+{
+	public:
+		using value_type = T;
+		const int size() {return sz;}
+	private:
+		T elem[sz];
+};
+
+Buffer <int, 10> bufG;
+
+int main()
+{
+	Buffer <char, 12> BufL;
+	
+	return 0;
+}
+
+/* 
+//template<Element T>
+template <typename T>
+	requires copyable<T>()
+
 void Vector<T>::resize(int newsize, T def=T{})
 
 //Use T{} as default value unless we say otherwise
@@ -28,4 +59,4 @@ int main()
 {
 	
 	return 0;
-}
+} */
