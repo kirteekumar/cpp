@@ -71,9 +71,9 @@ void Vector <T>::resize(int newsize, T d)
 class No_default
 {
     public:
-    No_default(){
-        cout<<"No_default default : "<<endl;
-    }
+    //No_default(){
+    //    cout<<"No_default default : "<<endl;
+    //}
     No_default(int a){
         cout<<"No_default with arg : "<<a<<" "<<endl;
     }
@@ -82,12 +82,17 @@ class No_default
 
 int main()
 {
-    //Vector<double>  v;
-    Vector<double>  v1(5);
+    Vector<double>  v;
+    //Vector<double>  v1(5);
     //Vector<char>    v2;
 	
 	//Vector<No_default> nd1;
-	//Vector<No_default> nd2(1);
+	Vector<No_default> v3;
+	
+	//v.resize(10);
+	//v3.resize(10,No_default {2});
+	//cout<<" "<<endl;
+	v3.resize(10);
 	
 	return 0;
 }
