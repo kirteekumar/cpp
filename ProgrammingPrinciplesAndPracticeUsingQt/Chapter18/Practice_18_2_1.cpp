@@ -1,8 +1,15 @@
 #include "iostream"
 
-using namespace std;
+//using namespace std;
 
-template<typename T, typename A = allocator<T>>
+template<typename T>
+class Allocator {
+    public:
+    T* allocate(int n);
+    void deallocate(T* p, int n);
+};
+
+template<typename T, typename A = Allocator<T>>
 //template<typename T>
 
 class Vector {
@@ -16,20 +23,20 @@ class Vector {
 	// size + free space
 	public:
 	Vector() :sz{0}, elem{nullptr}, space{0} { 
-	    cout<<"default : "<<endl;
+	    std::cout<<"default : "<<std::endl;
 	}
 	
 	explicit Vector(int s) :sz{s}, elem{new T[s]}, space{s}
 	{
-	    cout<<"explicit with argument : "<<s<<" "<<endl;
+	    std::cout<<"explicit with argument : "<<s<<" "<<std::endl;
 		for (int i=0; i<sz; ++i)
 		    elem[i] = 0;
 		// elements are initialized
 	}
 	
-	Vector(initializer_list<T>);
+	Vector(std::initializer_list<T>);
 	// list constructor
-	Vector& operator=(initializer_list<T>);
+	Vector& operator=(std::initializer_list<T>);
 	// list assignment
 	
 	Vector(const Vector&);
