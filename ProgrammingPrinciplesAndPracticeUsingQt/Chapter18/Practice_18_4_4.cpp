@@ -19,15 +19,24 @@ class Vector
 	Vector_rep<T,A> r;
 	public:
 	Vector() : r{A{} ,0} { }
+	
+	explicit Vector(int s, const T& val = T{}) :r{A{},s}
+	{
+		std::uninitialized_fill(r.elem, r.elem+r.sz, val);	// elements are initialized
+	}
+	
+	/*
 	explicit Vector(int s) :r{A{},s}
 	{
 		for (int i = 0; i < r.sz; ++i)
 			r.elem[i] = 0; 	// elements are initialized
 	}
+	*/
 	
 	void reserve(int newalloc);
 	Vector& operator=(const Vector&);
-
+    int size() const { return r.sz; }
+    int capacity() const { return r.space; }
 };
 
 
@@ -45,13 +54,30 @@ void Vector<T,A>::reserve(int newalloc)
 template<typename T, typename A>
 Vector<T,A>& Vector<T,A>::operator=(const Vector<T,A>& arg)
 {
+    if (arg.size()<=size()) 
+    {
+        move(arg.r.elem,arg.r.elem+arg.size(),r.elem);// enough space; copy directly
+        destroy(r.elem+arg.size(),r.elem+size()); // destroy sur plus elements
+    }
+    
+    auto tmp = arg; // copy all elements
     std::swap(*this, arg); // then swap (Vector handles): strong guarantee
     return *this;
+}
+
+template<typename T>
+void strong_assign(Vector<T>& target, const Vector<T> arg)
+{
+    std::swap(target,arg); // then swap (vector handles): strong guarantee
 }
 
 
 int main()
 {
+    Vector<double> v1;
+	Vector<double> v2;
+	
+	strong_assign(v1,v2);
 	
 	return 0;
 }
