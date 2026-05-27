@@ -26,6 +26,8 @@ class Vector
 	}
 	
 	void reserve(int newalloc);
+	Vector& operator=(const Vector&);
+
 };
 
 
@@ -38,6 +40,13 @@ void Vector<T,A>::reserve(int newalloc)
     std::uninitialized_move(r.elem, r.elem+r.sz, b.elem); // move
     std::destroy(r.elem, r.elem + r.sz); // destroy the old elements
     std::swap(r, b); // swap representations
+}
+
+template<typename T, typename A>
+Vector<T,A>& Vector<T,A>::operator=(const Vector<T,A>& arg)
+{
+    std::swap(*this, arg); // then swap (Vector handles): strong guarantee
+    return *this;
 }
 
 
