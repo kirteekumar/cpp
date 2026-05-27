@@ -85,15 +85,14 @@ class Vector {
 	// growth
 	void push_back(const T& d);
 	void reserve(int newalloc);
+
 	T* begin() const { return elem; }
 	// iteration support
 	T* end() const { return elem+sz; }
 };
 
 template<typename T, typename A>
-void Vector <T,A>::resize(int newalloc, T t)
-//template<typename T>
-//void Vector <T>::resize(int newsize, T t)
+void Vector <T,A>::reserve(int newalloc)
 {
     if(newalloc<=space)
         return;
@@ -106,10 +105,33 @@ void Vector <T,A>::resize(int newalloc, T t)
     space = newalloc;
 }
 
+template <typename T, typename A>
+void Vector<T,A>::push_back(const T& val)
+{
+   reserve((space==0) ? 8: 2*space);
+   std::construct_at(&elem[sz],val);
+   ++sz;
+}
+
+template <typename T, typename A>
+void Vector<T,A>::resize(int newsize, T val)
+{
+    reserve(newsize);
+    if(sz<newsize)
+        std::uninitialized_fill(&elem[sz], &elem[newsize],val);
+    if(newsize<sz)
+        std::destroy(&elem[newsize],&elem[sz]);
+    sz=newsize;
+}
+
 int main()
 {
     Vector<double>  v;
-    v.resize(1);
+    v.reserve(1);
+    v.push_back(1.0);
+	
+	v.resize(2); //default argument for init value
+	v.resize(2, 2.0); //pass 2.0 as init value
 	
 	return 0;
 }
