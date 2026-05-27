@@ -56,8 +56,8 @@ Vector<T,A>& Vector<T,A>::operator=(const Vector<T,A>& arg)
 {
     if (arg.size()<=size()) 
     {
-        move(arg.r.elem,arg.r.elem+arg.size(),r.elem);// enough space; copy directly
-        destroy(r.elem+arg.size(),r.elem+size()); // destroy sur plus elements
+        std::move(arg.r.elem,arg.r.elem+arg.size(),r.elem);// enough space; copy directly
+        std::destroy(r.elem+arg.size(),r.elem+size()); // destroy sur plus elements
     }
     
     auto tmp = arg; // copy all elements
@@ -77,7 +77,11 @@ int main()
     Vector<double> v1;
 	Vector<double> v2;
 	
-	strong_assign(v1,v2);
+	v1.reserve(1);
+	v1=v2;
+	//strong_assign<double>(v1,v2);
+	
+	//v1=v2;
 	
 	return 0;
 }
