@@ -1,5 +1,9 @@
+#include <algorithm>
+#include <utility>
+#include <string_view> 
 #include "iostream"
 #include <memory>
+
 
 template<typename T, typename A = std::allocator<T>>
 struct Vector_rep 
@@ -61,23 +65,23 @@ Vector<T,A>& Vector<T,A>::operator=(const Vector<T,A>& arg)
     }
     
     auto tmp = arg; // copy all elements
-    std::swap(*this, arg); // then swap (Vector handles): strong guarantee
+    std::swap(*this, arg); 
     return *this;
 }
 
 template<typename T>
 void strong_assign(Vector<T>& target, const Vector<T> arg)
 {
-    std::swap(target,arg); // then swap (vector handles): strong guarantee
+    std::swap(target,arg); 
 }
 
 
 int main()
 {
-    Vector<double> v1;
-	Vector<double> v2;
+    Vector<double> v1(1);
+	Vector<double> v2(1);
 	
-	v1.reserve(1);
+	//v1.reserve(1);
 	v1=v2;
 	//strong_assign<double>(v1,v2);
 	
