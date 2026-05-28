@@ -75,26 +75,46 @@ void strong_assign(Vector<T>& target, const Vector<T> arg)
     std::swap(target,arg); 
 }
 
-
+/*
 std::unique_ptr<Vector<int>> make_vec()
 {
 	auto res = new Vector<int> ;
 	return std::make_unique<Vector<int>>(res) ;
 }
- 
- 
+*/
+
+template <typename T>
+class VectorTemp 
+{
+	private:
+		int sz;
+		std::unique_ptr<T[]> elem;
+		int alloc;
+	
+	public:
+		VectorTemp(int s):sz{s},elem{std::make_unique<T[]>(s)}{}
+		T& operator[](int i){return elem[i];}
+		int size() {return sz;}
+};
+
 int main()
 {
-    Vector<double> v1(1);
-	Vector<double> v2(1);
+    VectorTemp<int> vt(5);
+    
+    std::cout << vt[2];
+    
+    //Vector<double> v1(1);
+	//Vector<double> v2(1);
 
-	auto p=make_vec();
-	
+	//auto p=make_vec();
+
 	//v1.reserve(1);
 	//v1=v2;
 	//strong_assign<double>(v1,v2);
 	
 	//v1=v2;
+
+	
 	
 	return 0;
 }
