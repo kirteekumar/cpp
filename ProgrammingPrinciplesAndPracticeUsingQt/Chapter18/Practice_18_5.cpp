@@ -76,10 +76,19 @@ void strong_assign(Vector<T>& target, const Vector<T> arg)
 }
 
 
+Vector<int> make_vec()
+{
+    Vector<int> res;	
+    return res; //TODO: the move constructor
+}
+ 
+ 
 int main()
 {
     Vector<double> v1(1);
 	Vector<double> v2(1);
+
+	auto p=make_vec();
 	
 	//v1.reserve(1);
 	//v1=v2;
