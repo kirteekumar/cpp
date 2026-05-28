@@ -76,10 +76,10 @@ void strong_assign(Vector<T>& target, const Vector<T> arg)
 }
 
 
-Vector<int> make_vec()
+std::unique_ptr<Vector<int>> make_vec()
 {
-    Vector<int> res;	
-    return res; //TODO: the move constructor
+	auto res = new Vector<int> ;
+	return std::make_unique<Vector<int>>(res) ;
 }
  
  
