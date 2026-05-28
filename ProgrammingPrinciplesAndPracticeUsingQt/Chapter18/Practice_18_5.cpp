@@ -3,7 +3,7 @@
 #include <string_view> 
 #include "iostream"
 #include <memory>
-
+#include <string>
 
 template<typename T, typename A = std::allocator<T>>
 struct Vector_rep 
@@ -75,13 +75,13 @@ void strong_assign(Vector<T>& target, const Vector<T> arg)
     std::swap(target,arg); 
 }
 
-/*
+
 std::unique_ptr<Vector<int>> make_vec()
 {
 	auto res = new Vector<int> ;
-	return std::make_unique<Vector<int>>(res) ;
+	return std::make_unique<Vector<int>>(1) ;
 }
-*/
+
 
 template <typename T>
 class VectorTemp 
@@ -97,11 +97,22 @@ class VectorTemp
 		int size() {return sz;}
 };
 
+struct Slink {
+    std::string name;
+    std::shared_ptr<Slink> next;
+};
+
+
 int main()
 {
     VectorTemp<int> vt(5);
     
     std::cout << vt[2];
+    
+    auto p = std::make_shared<Slink>("Friday",nullptr);
+    auto q = std::make_shared<Slink>("Viernes",p);
+
+    p->next=q;
     
     //Vector<double> v1(1);
 	//Vector<double> v2(1);
