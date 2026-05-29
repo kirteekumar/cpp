@@ -3,6 +3,22 @@
 
 int gcount;
 
+//alternate implementation
+double * find_highest(std::vector<double>& v)
+{
+	double h = -1;
+	double* high = nullptr;
+	for(double& x : v)
+		if(h<x)
+		{
+			high=&x;
+			h=x;
+		}
+	
+	return high;
+}
+
+
 double * get_from_jack(int * count){ 
 	double *dp = new double [(*count)]; 
 	std::cout << "enter " << (*count) << " jack's numbers : " ;
@@ -66,7 +82,14 @@ void fct()
 	double * jack_high = high(jack_data,jack_data+jack_count);
 	double * jill_high = high(&jill_data[0],&jill_data[0]+jill_data.size());
 
-	std::cout<<"jill's max: " << *jill_high << "; jack's max: "<<*jack_high<<std::endl;
+	std::cout<<"jill's max: " << *jill_high << " jack's max: "<<*jack_high<<std::endl;
+
+	std::vector<double>& v = jill_data;
+	double *middle = &v[0] + v.size()/2;
+	double *high1 = high(&v[0], middle);
+	double *high2 = high(middle, &v[0]+v.size());
+
+	std::cout << "jill's high1 : "<<*high1<< " jill's high2: "<<*high2<<std::endl;
 
 	//process
 	delete[] jack_data;
