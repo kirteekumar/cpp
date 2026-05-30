@@ -1,4 +1,5 @@
 #include "iostream"
+#include "iterator"
 
 template<typename T>
 struct Link {
@@ -20,7 +21,7 @@ class List{
 public:
 	class iterator;
 	iterator begin(){}
-	iterator end(){}
+	iterator end()	{}
 
 	iterator insert(iterator p, const T& v); //after p
 	iterator erase(iterator p); //remove p from the list
@@ -49,7 +50,7 @@ class List<T>::iterator
 	bool operator!=(const iterator& b) const{return curr!=b.curr;}
 };
 
-template<std::iterator Iter>
+template<std::input_iterator Iter>
 Iter high(Iter first, Iter last)
 {
 	Iter high=first;
@@ -58,6 +59,7 @@ Iter high(Iter first, Iter last)
 			high=p;
 	return high;
 }
+
 
 void f()
 {
