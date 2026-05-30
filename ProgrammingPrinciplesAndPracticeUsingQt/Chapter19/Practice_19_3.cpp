@@ -68,7 +68,10 @@ void f()
 		lst.push_front(x);
 	
 	List<int>::iterator p=high(lst.begin(),lst.end());
-	std::cout<<"the highest value was " << *p << "\n";
+	if(p==lst.end())
+		cout<<"the list is empty"<<endl;
+	else
+		std::cout<<"the highest value was " << *p << "\n";
 
 
 
