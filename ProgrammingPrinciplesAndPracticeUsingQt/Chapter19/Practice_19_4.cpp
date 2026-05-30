@@ -39,10 +39,40 @@ class List {
 };
 
 
-void print1(const vector<double>& v)
+	//19.4.1 : container traversal:
+void print1( Vector<double>& v)
 {
 	for(int i=0; i<v.size(); ++i)
 		std::cout<<v[i]<<'\n';
+}
+
+/*
+void print2(const Vector<double>& v, const list <double>& lst)
+{
+	for(Vector<T>::iterator p=v.begin(); p!=v.end();++p)
+		std::cout<<*p<<'\n';
+
+	for(list)
+}
+*/
+
+
+void print2( Vector<double>&v , List<double>& lst)
+{
+	for(auto p=v.begin(); p!=v.end();++p)
+		std::cout <<*p <<'\n';
+
+	for(auto p=v.end(); p!=v.end(); ++p)
+		std::cout <<*p<< '\n';
+}
+
+void print3(Vector <double> &v, List <double> &lst)
+{
+	for(double x:v)
+		std::cout<<x<<'\n';
+
+	for(double x:lst)
+		std::cout<<x<<'\n';
 }
 
 int main()
@@ -55,7 +85,7 @@ int main()
 
 	//19.4.1 : container traversal:
 	
-
+	
 	return 0;
 }
 
