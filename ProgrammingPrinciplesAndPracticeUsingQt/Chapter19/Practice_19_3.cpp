@@ -50,7 +50,8 @@ class List<T>::iterator
 	bool operator!=(const iterator& b) const{return curr!=b.curr;}
 };
 
-template<std::input_iterator Iter>
+//template<std::input_iterator Iter>
+template<typename Iter>
 Iter high(Iter first, Iter last)
 {
 	Iter high=first;
@@ -67,7 +68,8 @@ void f()
 	for(int x;std::cin>>x;)
 		lst.push_front(x);
 	
-	List<int>::iterator p=high(lst.begin(),lst.end());
+	List<int>::iterator p=high<std::input_iterator>(lst.begin(),lst.end());
+	
 	if(p==lst.end())
 		cout<<"the list is empty"<<endl;
 	else
