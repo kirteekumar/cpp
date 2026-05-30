@@ -39,6 +39,12 @@ class List {
 };
 
 
+void print1(const vector<double>& v)
+{
+	for(int i=0; i<v.size(); ++i)
+		std::cout<<v[i]<<'\n';
+}
+
 int main()
 {
 	Vector<int> v;
@@ -48,6 +54,7 @@ int main()
 		std::cout<<v[i]<<'\n';
 
 	//19.4.1 : container traversal:
+	
 
 	return 0;
 }
