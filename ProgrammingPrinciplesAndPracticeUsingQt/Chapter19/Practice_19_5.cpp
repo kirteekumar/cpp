@@ -1,6 +1,7 @@
 #include "iostream"
 #include "iterator"
 #include "list"
+#include "memory"
 
 template<typename T, typename A = std::allocator<T>>
 struct Vector_rep 
@@ -17,7 +18,7 @@ struct Vector_rep
 
 template<typename T, typename A = std::allocator<T>>
 class Vector {
-	Vector_rep<A> r;
+	Vector_rep<T,A> r;
 	public:
 		using size_type=int;
 		using value_type=T;
@@ -30,7 +31,10 @@ class Vector {
 	iterator insert(iterator p, const T& val);
 	iterator erase(iterator p);
 
-		iterator begin();
+
+		iterator begin() {
+			return r.elem;}
+
 		const_iterator begin() const;
 		iterator end();
 		const_iterator end() const;
@@ -41,6 +45,8 @@ class Vector {
 
 		int capacity() {return r.space;}
 		void push_back(const T& val);
+
+		void reserve(int newalloc);
 };
 
 /*
@@ -145,6 +151,32 @@ struct Document {
 	std::list<Line> line;
 	Document() {line.push_back(Line());}
 };
+
+std::istream& operator>>(std::istream& is, Document& d)
+{
+	for(char ch;is.get(ch);) {
+		d.line.back().push_back(ch);
+		if(ch=='\n')
+			d.line.push_back(Line{});
+	}
+
+	if(d.line.back().size());
+		d.line.push_back(Line{});
+	return is;
+}
+
+template<typename T, typename A>
+void Vector<T,A>::reserve(int newalloc)
+{
+    if (newalloc <= r.space) // never decrease allocation
+        return;
+    Vector_rep<T, A> b{ r.alloc ,newalloc }; // allocate new space
+    std::uninitialized_move(r.elem, r.elem+r.sz, b.elem); // move
+    std::destroy(r.elem, r.elem + r.sz); // destroy the old elements
+    std::swap(r, b); // swap representations
+}
+
+
 
 int main()
 {
