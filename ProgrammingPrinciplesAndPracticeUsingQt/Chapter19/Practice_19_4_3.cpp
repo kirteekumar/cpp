@@ -34,9 +34,11 @@ class Vector {
 		iterator end();
 		const_iterator end() const;
 
-		size_type size();
+		size_type size(){return r.sz;}
 
 		T operator[](T){ return T{}; }
+
+		int capacity() {return r.space;}
 };
 
 template <typename T, typename A=std::allocator<T>>
@@ -57,6 +59,31 @@ class List {
 		//...
 };
 
+template<typename T, typename A>
+Vector<T,A>::iterator Vector<T,A>::erase(iterator p)
+{
+	if(p==end())
+		return p;
+
+	move(p+1,r.sz,p);
+	destroy_at(r.elem()+r.sz-1);
+	--r.sz;
+	return p;
+}
+
+template<typename T, typename A>
+Vector<T,A>::iterator Vector<T,A>::insert(iterator p, const T& val)
+{
+	int index=p-begin();
+	if(size()==capacity())
+		reserve(size()==0?8:2*size());
+
+	p=begin()+index;
+	move_backward(p,r.sz-1,p+1);
+	*(begin() + index) = val;
+	++r.sz;
+	return p;
+}
 
 	//19.4.1 : container traversal:
 void print1( Vector<double>& v)
