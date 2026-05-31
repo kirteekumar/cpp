@@ -184,6 +184,15 @@ class Text_iterator{
 	public:
 	Text_iterator(std::list<Line>::iterator lI, Line::iterator pp) : in{lI},pos{pp} {}
 
+
+	char& operator*() {return *pos;}
+	Text_iterator& operator++();
+
+	bool operator==(const Text_iterator& other) const
+	{ return in==other.in && pos==other.pos;}
+
+	bool operator!=(const Text_iterator& other) const
+	{ return !(*this==other);}
 };
 
 int main()
