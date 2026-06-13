@@ -137,6 +137,45 @@ void print3(Vector <double> &v, List <double> &lst)
 
 /*------19.5---------*/
 
+using Line=Vector<char>;
+
+//19.5.2
+class Text_iterator{
+	std::list<Line>::iterator ln;
+	Line::iterator pos;
+
+	public:
+	Text_iterator(std::list<Line>::iterator lI, Line::iterator pp) : ln{lI},pos{pp} {}
+
+
+	char& operator*() {return *pos;}
+	Text_iterator& operator++();
+
+	bool operator==(const Text_iterator& other) const
+	{ return ln==other.ln && pos==other.pos;}
+
+	bool operator!=(const Text_iterator& other) const
+	{ return !(*this==other);}
+};
+
+struct Document {
+	std::list<Line> line;
+	Document() {line.push_back(Line());}
+
+	Text_iterator begin()
+	{
+		return Text_iterator{line.begin(), line.begin()->begin()};
+	}
+
+	Text_iterator end()
+	{
+		auto last = line.end();
+		--last;
+		return Text_iterator{last,(*last).end()};
+	}
+};
+
+
 template <typename T, typename A>
 void Vector<T,A>::push_back(const T& val)
 {
@@ -145,12 +184,6 @@ void Vector<T,A>::push_back(const T& val)
    ++r.sz;
 }
 
-
-using Line=Vector<char>;
-struct Document {
-	std::list<Line> line;
-	Document() {line.push_back(Line());}
-};
 
 std::istream& operator>>(std::istream& is, Document& d)
 {
@@ -176,24 +209,18 @@ void Vector<T,A>::reserve(int newalloc)
     std::swap(r, b); // swap representations
 }
 
-//19.5.2
-class Text_iterator{
-	std::list<Line>::iterator in;
-	Line::iterator pos;
 
-	public:
-	Text_iterator(std::list<Line>::iterator lI, Line::iterator pp) : in{lI},pos{pp} {}
+Text_iterator& Text_iterator::operator++()
+{
+	++pos;
+	if(pos==ln->end()) {
+		++ln;
+		pos=ln->begin();
+	}
+	return *this;
+}
 
 
-	char& operator*() {return *pos;}
-	Text_iterator& operator++();
-
-	bool operator==(const Text_iterator& other) const
-	{ return in==other.in && pos==other.pos;}
-
-	bool operator!=(const Text_iterator& other) const
-	{ return !(*this==other);}
-};
 
 int main()
 {
